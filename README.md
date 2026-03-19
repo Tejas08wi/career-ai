@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 NextStep AI – Career Mentor Chatbot
 
-## Getting Started
+An AI-powered chatbot designed to guide students (especially from tier-3 colleges) towards backend development careers with structured, practical advice.
 
-First, run the development server:
+---
+
+## 🌟 Why I Built This
+
+As a student from a tier-3 college, I noticed that most career advice online is either too generic or overwhelming.
+
+So I built **NextStep AI** — a focused career mentor that:
+- Gives step-by-step backend roadmaps
+- Suggests real projects
+- Helps with interview preparation
+- Keeps advice practical and actionable
+
+---
+
+## ✨ Features
+
+- 💬 AI Chatbot focused on backend careers
+- 🧠 Structured responses (roadmaps, steps, timelines)
+- ⚡ Suggestion buttons for quick queries
+- 📜 Chat history saved (localStorage)
+- 📋 Copy response feature
+- 🕒 Message timestamps
+- 🎯 Clean and responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js (App Router), React
+- **Styling:** Tailwind CSS
+- **Backend:** Next.js API Routes
+- **AI:** Hugging Face (Mistral / Llama models)
+
+---
+
+## 🚀 How It Works
+
+1. User asks a career-related question
+2. Messages are sent to backend (`/api/chat`)
+3. Backend formats prompt for career mentoring
+4. Hugging Face model generates response
+5. UI displays structured answer
+
+---
+
+## 🧪 Example Questions
+
+- Give me backend roadmap
+- Project ideas for backend
+- How to crack backend interviews?
+
+---
+
+## ⚙️ Setup Instructions
 
 ```bash
+git clone https://github.com/Tejas08wi/career-ai.git
+cd career-ai
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
